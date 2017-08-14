@@ -1,4 +1,4 @@
-# AWS Series - EC2 Instance Basics
+# AWS Series 1 - EC2 Instance Basics
 
 ## What is an EC2 Instance
 
@@ -15,26 +15,26 @@ In the EC2 Console, click "Security Groups". Remember to give each group a desc
 ### 1. For Load Balancer - Name: "Load Balancer"
 
 - Type: Custom TCP, Protocol: TCP, Port Range: 3000, Source: Anywhere
-Your load balancer will be the endpoint that your end users are route to. So let's allow all TCP traffic at the port of your server.
+  Your load balancer will be the endpoint that your end users are route to. So let's allow all TCP traffic at the port of your server.
 
 ### 2. For App Server Instances - Name: "Web Tier"
 
 - Type: Custom TCP, Protocol: TCP, Port Range: 3000, Source: Load Balancer Security Group ID
-So your load balancer can route traffic to all your servers.
+  So your load balancer can route traffic to all your servers.
 
 - Type: Custom TCP, Protocol: TCP, Port Range: 3000, Source: My IP
-So you can connect to your servers by TCP.
+  So you can connect to your servers by TCP.
 
 - Type: SSH, Protocol: TCP, Port Range: 22, Source: My IP 
-So you can SSH to your instance and make backend changes to it (as if you are physically with the computer and change it). It's just that there will be no graphic interface, all settings need to be done in the terminal.
+  So you can SSH to your instance and make backend changes to it (as if you are physically with the computer and change it). It's just that there will be no graphic interface, all settings need to be done in the terminal.
 
 ### 3. For Database - Name: "DB Tier"
 
 - Type: MYSQL/Aurora, Protocol: TCP, Port Range: 3306, Source: My IP
-So you can connect to your DB.
+  So you can connect to your DB.
 
 - Type: MYSQL/Aurora, Protocol: TCP, Port Range: 3306, Source: Web Tier Security Group ID
-So all your servers can connect to your databases. 
+  So all your servers can connect to your databases. 
 
 Now the security group is ready. I always prefer to setup the security groups before diving in to create the instance because after the instance is setup with a security group, it cannot be changed. You can modify the security group attached to it of course, but it will mean that all other instances with this security group will be affected. If you have to change the security group but only for this instance, the only solution is delete it and create a new one with the correct security group. 
 
@@ -129,7 +129,7 @@ The biggest design flaw on AWS is there is no show me all the running stuff that
 
 ## Further Reading
 
-Create an Image of your Instance to launch more of the clones of it 
+AMI - Create an Image of your Instance to launch more of the clones of it 
 
 RDS - Hold MySQL DB on AWS
 
