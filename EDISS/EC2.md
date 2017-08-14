@@ -106,11 +106,11 @@ Now your EC2 is like a pure cute laptop with no code and apps, but only MySQL, g
 - install all the node dependencies
 - and start the server app.js
 
-    git clone https://github.com/TinaHongBu/CMUNotes.git
+``` git clone https://github.com/TinaHongBu/CMUNotes.git
     cd CMUNotes
     npm install
     node app
-
+```
 Another way to get your code on your EC2 is to use scp, especially when you want to copy a big data file.
 
     scp -i full-path-to-pem-file full-path-to-local-folder full-path-of-ec2-folder
@@ -123,11 +123,13 @@ For example, if I want to copy the test folder in Documents to the inputData fol
 
 In your EC2 console, select actions, instance state, then stop if you just want to pause it and may need to use this instance later or terminate if you want to delete if forever. Either choice will stop AWS from billing you for this service.
 
-Make sure to go back to the main dashboard and check if there is 0 running instances if you want to make sure that you are not leaving something up there running and get a $300 bill end of the month. Don't ask me why I am mentioning this. The biggest design flaw on AWS is there is no show me all the running stuff that is costing me god damn money button. In the instance console, they only show you the instances in the specific region which you can change on the upper right corner. So when you built an amazing available and scalable system by deploying several servers in North Virginia, several in Ohio and several in North California, you have every reason to only remember to stop the ones in North Virginia and totally forget about checking the other 2. 
+Make sure to go back to the main dashboard and check if there is 0 running instances if you want to make sure that you are not leaving something up there running and get a $300 bill end of the month. Don't ask me why I am mentioning this. 
+
+The biggest design flaw on AWS is there is no show me all the running stuff that is costing me god damn money button. In the instance console, they only show you the instances in the specific region which you can change on the upper right corner. So when you built an amazing available and scalable system by deploying several servers in North Virginia, several in Ohio and several in North California, you have every reason to only remember to stop the ones in North Virginia and totally forget about checking the other 2. 
 
 ## Further Reading
 
-Create an Image of your Instance to launch more of the clones of it. 
+Create an Image of your Instance to launch more of the clones of it 
 
 RDS - Hold MySQL DB on AWS
 
