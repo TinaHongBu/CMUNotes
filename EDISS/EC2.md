@@ -61,7 +61,7 @@ Click Advanced Details to bootstrap your instance. Bootstrap simply means to mak
     curl --silent --location https://rpm.nodesource.com/setup_6.x | sudo bash -
     sudo yum -y install nodejs mysql-server git -y
 
-Step 5 - Tags
+### Step 5 - Tags
 
 Also, add tags to help yourself manage your instances. Make them meaningful to yourself.
 
@@ -71,15 +71,15 @@ Also, add tags to help yourself manage your instances. Make them meaningful to y
 
 - env: test/prod
 
-Step 6 - Security Groups
+### Step 6 - Security Groups
 
 Select "selecting an existing security group" and chose the web tier one.
 
 And now you are good to go!
 
-How to Use it
+## How to Use it
 
-1. Connect to it via SSH
+### 1. Connect to it via SSH
 
 In your terminal, cd to the folder with your pem file. Then type one of the following commands
 
@@ -98,7 +98,7 @@ You will see something like this but it’s correct. Just ignore it.
     The authenticity of host 'ec2-198-51-100-1.compute-1.amazonaws.com (10.254.142.33)'
     can't be established.
 
-2. Deploy Your Code
+### 2. Deploy Your Code
 
 Now your EC2 is like a pure cute laptop with no code and apps, but only MySQL, git and node.js installed. To run your server on it, push your code to GitHub and clone it on your EC2, unless you want to manually copy and paste each code file. Run the following code to
 
@@ -119,13 +119,13 @@ For example, if I want to copy the test folder in Documents to the inputData fol
 
     scp -i /Users/Tina/Documents/test/Tina.pem /Users/Tina/Documents/test/ ec2-user@34.230.41.147:~/inputData
 
-How to Stop/Terminate it
+## How to Stop/Terminate it
 
 In your EC2 console, select actions, instance state, then stop if you just want to pause it and may need to use this instance later or terminate if you want to delete if forever. Either choice will stop AWS from billing you for this service.
 
 Make sure to go back to the main dashboard and check if there is 0 running instances if you want to make sure that you are not leaving something up there running and get a $300 bill end of the month. Don't ask me why I am mentioning this. The biggest design flaw on AWS is there is no show me all the running stuff that is costing me god damn money button. In the instance console, they only show you the instances in the specific region which you can change on the upper right corner. So when you built an amazing available and scalable system by deploying several servers in North Virginia, several in Ohio and several in North California, you have every reason to only remember to stop the ones in North Virginia and totally forget about checking the other 2. 
 
-Further Reading
+## Further Reading
 
 Create an Image of your Instance to launch more of the clones of it. 
 
