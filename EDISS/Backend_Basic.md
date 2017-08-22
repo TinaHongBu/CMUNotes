@@ -9,15 +9,11 @@
 - Curly braces hold objects
 - Square brackets hold arrays
 
-## Examples:
-
-JSON Object:
+### Examples
 
 ``` json
 {"name":"JohnJohnson","street":"Oslo West16","phone":"555 1234567"}
 ```
-
-JSON Object that includes an array:
 
 ``` json
 {

@@ -10,5 +10,3 @@
   # Unique pairs when order is irrelavant
   pair = [foo(data[x], data[y]) for x in range(len(data)) for y in range(x+1,len(data))]
   ```
-
-  ​
