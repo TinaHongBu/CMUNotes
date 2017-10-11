@@ -430,39 +430,39 @@ A business choice.
 
 - - One-to-Few: embedding 
 
-`> db.person.findOne()`
-
-`{`
-
-`  name: 'Kate Monster',`
-
-`  addresses : [`
-
-`     { street: '123 Sesame St', city: 'Anytown', cc: 'USA' },`
-
-`     { street: '123 Avenue Q', city: 'New York', cc: 'USA' }`
-
-`  ]`
-
-`}`
+````> db.person.findOne()
+{
+name: 'Kate Monster',
+addresses : [
+{ street: '123 Sesame St', city: 'Anytown', cc: 'USA' },
+{ street: '123 Avenue Q', city: 'New York', cc: 'USA' }
+]
+}
+````
 
 - - One-to-many: an array of references 
 
-`> db.products.findOne()`
+  ```
+  > db.products.findOne()
 
-`{`
+  {
 
-`    name : 'left-handed smoke shifter',`
+  name : 'left-handed smoke shifter',
 
-`    parts : [     // array of references to Part documents`
+  parts : [     // array of references to Part documents
 
-`        ObjectID('AAAA'),    // reference to the #4 grommet above`
+  ObjectID('AAAA'),    // reference to the #4 grommet above
 
-`        ObjectID('F17C')    // reference to a different Part`
+  ObjectID('F17C')    // reference to a different Part
 
-`    ]`
+  ]
 
-`}`
+  }
+  ```
+
+```
+
+```
 
 `> db.parts.findOne()`
 
