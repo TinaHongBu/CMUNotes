@@ -52,3 +52,6 @@ GroupX fitness classes are also amazing. There is a wide range of different work
 
 Summer is also a good time to talk to your career advisor and sharpen your resume to get ready for TOC. Sometimes is not about what you learned from the appointments, just talking to your career advisor is a stress reliever and a to get you back in track if you have been laid back for sometime.
 
+### 4. Center for Student Diversity and Inclusion
+
+This is an organization that tries to provide a safer campus environment for the LGBTQ+ community. They offer different Gender Programs including the SafeZone training that educates people about basic ideas or things you can do to show your support for the community. You will be given some stickers that you can put on your laptop or office door to show that you are a person that offers support and is safe to talk to. 
