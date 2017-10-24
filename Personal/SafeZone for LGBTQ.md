@@ -2,7 +2,7 @@
 
 Listen with the intent to understand, not to respond. 
 
-## Sterotypes for LGBTQ I didn't know
+## Stereotypes for LGBTQ I didn't know
 
 - Bury your gays: gay characters usually die earlier in movies
 - Dyke: old word for lesbians, considered rude
@@ -24,8 +24,8 @@ Listen with the intent to understand, not to respond.
 ## New Vocabulary Learned
 
 - Gender Fluid, fluidity in sexuality
-- masculine/femine presenting
-- Pansexualit: the sexual, romantic or emotional attraction towards people regardless of their sex or gender identity
+- masculine/feminine presenting
+- Pansexuality: the sexual, romantic or emotional attraction towards people regardless of their sex or gender identity
 
 ## Importance of Pronouns
 
