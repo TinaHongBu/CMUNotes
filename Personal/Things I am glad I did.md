@@ -9,3 +9,5 @@ Got the video speed controller extension
 Took the practical data science course 
 
 Attended all the TOC & EOC when I am not actively looking for jobs
+
+Remove all apps from Macbook dock, especially mail
